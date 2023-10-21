@@ -30,18 +30,6 @@ const Member = () => {
     to: { y: 0 },
   });
 
-  const { scrollY } = useViewportScroll();
-  const y1 = useTransform(scrollY, [0, 300], [0, 50]);
-  const y2 = useTransform(scrollY, [0, 300], [0, -100]);
-
-  const [ref, inView, entry] = useInView({
-    /* Optional options */
-    threshold: 0.5,
-    triggerOnce: false,
-  });
-
-  console.log(entry);
-
   const bandMembersData = [
     {
       name: "Malcolm Young",
@@ -108,11 +96,6 @@ const Member = () => {
     };
   }, []);
 
-  // Define a style for h3 and h4 elements based on the scroll position
-  const h3Style = {
-    transform: `translateY(${scrollPosition / 15}px)`, // Adjust the division factor for the desired effect
-  };
-
   return (
     <animated.div
       style={{
@@ -129,15 +112,12 @@ const Member = () => {
           }}
         >
           <div className="member-name">
-            <motion.h3 style={h3Style}>{member.name}</motion.h3>
+            <motion.h3 >{member.name}</motion.h3>
           </div>
           <div className="member-div">
             <animated.div style={{ ...springs }} className="image1">
               <motion.div
-                style={{ y: y1, x: 0 }}
-                animate={inView ? "visible" : "hidden"}
-                transition={{ duration: 2, ease: "easeOut" }}
-                ref={ref}
+
                 className="image-mask"
               >
                 <motion.img
