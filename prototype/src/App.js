@@ -43,7 +43,6 @@ function App() {
     const textAnimation = () => {
       d3.select('.text-container')
         .selectAll('p')
-        .data(['The Beatles were a legendary British band.', 'They had a significant impact on music history.'])
         .enter()
         .append('p')
         .text((d) => d)
@@ -83,6 +82,7 @@ function App() {
           <video className='background-video' src={backvideo} autoPlay muted loop></video>
 
           <button
+          
             onClick={nextPage}
             style={{
               background: 'none',
@@ -101,19 +101,13 @@ function App() {
 
       {page === 2 && (
         <div className="page">
-          
-                    <Member />
 
-          <div className="text-container"></div>
-          <button onClick={nextPage}>Next Page</button>
-                    {/* <audio src={audioFragment} autoPlay controls /> */}
-        </div>
-      )}
+      <About />
+      <Member />
+  </div>
 
-      {page === 3 && (
-        <div className="page">
-          <About />
-        </div>
+        
+        
       )}
 
     </div>

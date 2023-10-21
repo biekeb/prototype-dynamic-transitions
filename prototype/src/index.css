@@ -11,7 +11,13 @@
 }
 
 body{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.719);
+    background-image: url("./images/grunge.jpg");
+    background-size: cover;
+
+background-blend-mode:multiply;
+
+
 }
 
 p{
@@ -67,7 +73,7 @@ h4{
   width: 50%;
 }
 
-button{
+#playButton{
   display: block;
   margin: 0 auto;
   width: 30%;
@@ -175,3 +181,50 @@ padding-top: 5%;
 }
 
 
+.about-component {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  /* Set the z-index to a value that positions it above other content. */
+}
+
+.member-component {
+  z-index: 2;
+  position: relative;
+
+  margin-top: 500vh;
+}
+
+.button{
+    animation-name: neon-border-flicker;
+    animation-duration: 3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    
+    border: solid 1pt red;
+    display: block;
+      margin: 0 auto;
+      width: 20%;
+      border-radius: 10px;
+ 
+}
+
+
+@keyframes neon-border-flicker {
+  0% {
+        border: 3pt solid rgb(255, 251, 0);
+  }
+
+  50% {
+    border: 3pt solid red;
+  }
+
+  100% {
+    border: 3pt solid rgb(255, 251, 0) ;
+  }
+}
+
+.button:hover {
+scale:1.1;
+
+}

@@ -98,6 +98,7 @@ const Member = () => {
 
   return (
     <animated.div
+    
       style={{
         ...springs,
       }}
@@ -112,14 +113,11 @@ const Member = () => {
           }}
         >
           <div className="member-name">
-            <motion.h3 >{member.name}</motion.h3>
+            <motion.h3>{member.name}</motion.h3>
           </div>
           <div className="member-div">
             <animated.div style={{ ...springs }} className="image1">
-              <motion.div
-
-                className="image-mask"
-              >
+              <motion.div className="image-mask">
                 <motion.img
                   src={member.images.image1}
                   alt=""
