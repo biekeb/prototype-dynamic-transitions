@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Malcolm Young",
+    "role": "slag gitaar",
+    "images": {
+      "image1": "../images/Malcolm_Young.jpg",
+      "image2": "../images/Malcolm-Young-2.jpg"
+    }
+  },
+  {
+    "name": "Agnus Young",
+    "role": "Leadgitarist",
+    "images": {
+      "image1": "../images/agnus.jpg",
+      "image2": "../images/agnus2.jpg"
+    }
+  },
+  {
+    "name": "Bon Scott",
+    "role": "Leadzanger",
+    "images": {
+      "image1": "../images/BonScott.jpg",
+      "image2": "../images/bon2.jpg"
+    }
+  },
+  {
+    "name": "Cliff Williams",
+    "role": "basgitaar",
+    "images": {
+      "image1": "../images/cliff.jpg",
+      "image2": "../images/cliff2.jpg"
+    }
+  },
+  {
+    "name": "Phil Rudd",
+    "role": "Drum",
+    "images": {
+      "image1": "../images/phil.jpg",
+      "image2": "../images/phil2.webp"
+    }
+  }
+]
