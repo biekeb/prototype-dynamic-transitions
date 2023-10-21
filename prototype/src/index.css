@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'acdc';
+  src: url('./font/squealer.ttf');
+
+}
+
+@font-face {
+  font-family: 'buffalo';
+  src: url('./font/BuffaloInline2Grunge.otf');
+
+}
+
+body{
+  background-color: black;
+}
+
+p{
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  font-family: "buffalo";
+  
+}
+
+h1{
+  color: rgb(255, 0, 0);
+  font-size: 150pt;
+
+  text-align: center;
+  font-family: acdc;
+}
+
+h2{
+  
+  color: white;
+  font-size: 50pt;
+  text-align: center;
+  font-family: "acdc";
+}
+
+h3{
+  color: red;
+  font-size: 50pt;
+  
+  text-align: center;
+  font-family: acdc;
+}
+
+h4{
+  color: white;
+  font-size: 30pt;
+  text-align: center;
+  font-family: buffalo;
+
+}
+
+.acdc{
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 3%;
+}
+
+.play{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  border-radius: 10px;
+}
+
+#playButton:hover{
+  transition: 0.5s ease-in;
+  cursor: pointer;
+  scale: 1.1;
+
+}
+
+
+
+.background-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  transition: 1s opacity;
+} 
+
+
+
+
+.background-member {
+width: 100%;
+height: 100vh;
+position: absolute;
+  z-index: -100;
+  background-size: cover;
+  transition: 1s opacity;
+  opacity: 50%;
+  
+}
+
+.member{
+  height: 100vh;
+}
+
+
+
+.image1 img{
+
+  height: 500px;
+  z-index: 99;
+  
+}
+.image2 img{
+height: 500px;
+}
+
+.member-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.member-name{
+padding-top: 5%;
+}
+
+
+.malcolm {
+  background-image: url("./images/malcolm-background.webp");
+}
+
+.agnus {
+  background-image: url("./images/angusbg.jpg");
+
+}
+
+.bon {
+  background-image: url("./images/bonbg.jpg");
+}
+
+.cliff {
+  background-image: url("./images/cliffbg.jpg");
+}
+
+.phil {
+  background-image: url("./images/philbg.jpg");
+}
+
+.image-mask {
+  width: 500px;
+  /* Adjust the width as needed */
+  height: 500px;
+  /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.image-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
